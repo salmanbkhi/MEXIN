@@ -1,0 +1,370 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>mexin</title>
+<link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+<link rel="icon" type="image/icon" href="assets/img/m-favicon.png">
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<script src="assets/js/jssor.slider-22.0.7.mini.js"></script>
+        <script type="text/javascript" >
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:-1,d:1,o:-1},{b:0,d:1000,o:1}],
+              [{b:1900,d:2000,x:-379,e:{x:7}}],
+              [{b:1900,d:2000,x:-379,e:{x:7}}],
+              [{b:-1,d:1,o:-1,r:288,sX:9,sY:9},{b:1000,d:900,x:-1400,y:-660,o:1,r:-288,sX:-9,sY:-9,e:{r:6}},{b:1900,d:1600,x:-200,o:-1,e:{x:16}}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*responsive code end*/
+        });
+    </script>
+</head>
+
+<body>
+	<div class="top-bar">
+     <div class="container">
+      <div class="top-links">
+      	<ul>
+        <li><a href="contact-us.html">FORM</a></li>
+        <li>|</li>
+        <li><a href="contact-us.html">TERMS</a></li>
+        <li>|</li>
+        <li><a href="contact-us.html">CONTACT</a></li>
+        </ul>
+      </div><!-- top-links -->
+       <div class="social-follow">
+        <a href="https://www.facebook.com" class="facebook"><i class="fa fa-facebook fa-lg"></i></a>
+        <a href="https://www.dribbble.com" class="dribbble"><i class="fa fa-dribbble fa-lg"></i></a>
+        <a href="https://www.vimeo.com" class="vimeo"><i class="fa fa-vimeo fa-lg"></i></a>
+        <a href="https://www.google.com" class="google"><i class="fa fa-google fa-lg"></i></a>
+        <a href="https://www.twitter.com" class="twitter"><i class="fa fa-twitter fa-lg"></i></a>
+       </div><!-- social-follow -->
+      </div><!-- container -->
+     </div><!-- top-bar -->
+
+<header id="header" class="clearfix">
+ <div class="container">
+  <div class="logo">
+   <img src="assets/img/logo.jpg">
+  </div><!-- logo -->
+  <div class="search-form">
+   <input type="text" class="search-box">
+  </div><!-- search-form -->
+   <ul class="nav">
+    <li class="current"><a href="index.html">HOME</a>
+     <ul>
+      <li class="current"><a href="index.html">HOME 1</a></li>
+      <li><a href="index.html">HOME 2</a></li>
+      <li><a href="index.html">HOME 3</a>
+      <ul>
+      <li><a href="index.html">submenu 1</a></li>  
+      <li><a href="index.html">submenu 2</a></li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+    <li><a href="pages.html">PAGES</a></li>
+    <li><a href="feature.html">FEATURES</a></li>
+    <li><a href="blog.html">BLOG</a></li>
+    <li><a href="contact-us.html">WORK</a></li>
+   </ul><!-- nav --> 
+ </div><!-- container -->
+</header>
+
+	<div class="slider">
+		
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('assets/img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+            <a data-u="any" href="http://www.jssor.com" style="display:none">Full Width Slider</a>
+            <div data-p="225.00">
+                <img data-u="image" src="assets/img/red.jpg" />
+            </div>
+            <div data-p="225.00" style="display:none;">
+                <img data-u="image" src="assets/img/purple.jpg" />
+            </div>
+            <div data-p="225.00" data-po="80% 55%" style="display:none;">
+                <img data-u="image" src="assets/img/blue.jpg" />
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:8px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:8px;width:40px;height:58px;" data-autocenter="2"></span>
+    </div>
+    </div><!-- .slider -->
+   
+<section class="container clearfix">
+   <div class="clearfix">
+   	 <div class="one-third"> 
+      <article class="icon-box3">
+       <i class="fa fa-cube fa-3x"></i>
+       <h3>Web Hosting</h3>
+       <p>innovative Design always develop in tandem with innovative technology,and can never be end<br>in itself.lorem ipsum dolor</p>
+      </article>
+     </div><!-- one-third -->
+        	
+     <div class="one-third">
+      <article class="icon-box3">
+      <i class="fa fa-tv fa-3x"></i>
+       <h3>Web DESIGN</h3>
+       <p>innovative Design always develop in tandem with innovative technology,and can never be end<br>in itself.lorem ipsum dolor</p>
+      </article>
+     </div><!-- one-third -->
+        	
+     <div class="one-third last-column">
+      <article class="icon-box3">
+      <i class="fa fa-globe fa-3x"></i>
+       <h3>Server Management</h3>
+       <p>innovative Design always develop in tandem with innovative technology,and can never be end<br>in itself.lorem ipsum dolor</p>
+      </article>
+     </div><!-- one-third -->
+     </div><!-- clearfix -->
+    <div class="clearfix"> 	
+     <hr class="vertical-space1">
+      <aside class="left column">
+       <h1>Recent Works</h1>
+       <p>loren ipsum dolor sit amet, consectetur adipiscing elit aenean nisl orci</p>
+        <a class="magicmore" href="#">See All</a><hr>
+      
+      <hr class="vertical-space1">
+      
+      <h5>Categories</h5>
+      <div class="list-box1">
+      <ul>
+      <li><a href="#">DESIGN</a></li>
+      <li><a href="#">PRINT</a></li>
+      <li><a href="#">Video</a></li>
+      <li><a href="#">Other</a></li>
+      </ul>
+      </div><!-- list-box1 -->
+      
+      <hr>
+      
+      <h5>Archieves</h5>
+      <div class="list-box1">
+      <ul>
+      <li><a href="#">May 2012 (2)</a></li>
+      <li><a href="#">April 2012 (3)</a></li>
+      <li><a href="#">March 2012 (5)</a></li>
+      <li><a href="#">Feb 2012 (1)</a></li>
+      </ul>
+      </div><!-- list-box1 -->
+      
+      </aside><!-- left.column -->
+      
+      <div class="right column">
+           <div class="recent-work-items">
+           <figure class="one column">
+           		<img src="assets/img/s1.jpg" width="100%">
+              <figcaption>
+                <h4><a href="#">SaveThe World</a></h4>
+                <p>10 MAY 2013-<a href="#">DESIGN</a>,<a href="#">PRINT</a></p>
+              </figcaption>
+           </figure>
+           </div><!-- recent-work-items -->
+           
+           <div class="recent-work-items">
+           <figure class="one column">
+           		<img src="assets/img/s2.jpg" width="100%">
+              <figcaption>
+                <h4><a href="#">Mall Admirer</a></h4>
+                <p>10 MAY 2013-<a href="#">DESIGN</a>,<a href="#">PRINT</a></p>
+              </figcaption>
+           </figure>
+           </div><!-- recent-work-items -->
+           
+           <div class="recent-work-items">
+           <figure class="one column">
+           		<img src="assets/img/s3.jpg" width="100%">
+              <figcaption>
+                <h4><a href="#">Spoilt For Choice</a></h4>
+                <p>10 MAY 2013-<a href="#">DESIGN</a>,<a href="#">PRINT</a></p>
+              </figcaption>
+           </figure>
+           </div><!-- recent-work-items -->
+           
+           <div class="recent-work-items">
+           <figure class="one column">
+           		<img src="assets/img/s4.jpg" width="100%">
+              <figcaption>
+                <h4><a href="#">Busy Girl</a></h4>
+                <p>10 MAY 2013-<a href="#">DESIGN</a>,<a href="#">PRINT</a></p>
+              </figcaption>
+           </figure>
+           </div><!-- recent-work-items -->
+      </div><!-- right column -->
+     </div><!-- .clearfix -->
+     
+     <hr>
+     <article class="callout">
+ 		    <a href="#" class="callurl">Purchase Now</a>
+            <h1>Clean, Flat, Modern, & Responsive Template</h1>
+            <p>Minimal design helps viewers navigate though the design.</p>
+     </article><!-- article.callout -->
+    	   <div class="clearfix">
+		<article class="two column change">
+        <div class="brdr padding">
+        	<h2 class="necessary">Only Use what is necessary</h2>
+            <img src="assets/img/tv-1.gif" class="align-right">
+          <p class="paranew">Aliquam enim enim, pharetra in sodales at, interdum
+ sit amet dui. Nullam vulputate euismod urna non pharetra. Phasellus blandit mattis ipsum, ac laore et lorem lacinia et. Cras et ligula libero.</p>
+        <a class="magicmore" href="#">Haretra in sodales atsen interdum</a>
+        </div>
+        </article>
+        <article class="two column">
+         
+        	<h2 class="necessary">Only Use what is necessary</h2>
+           <img src="assets/img/tv-2.gif" class="align-right">
+           <p class="paranew">Aliquam enim enim, pharetra in sodales at, interdum
+ sit amet dui. Nullam vulputate euismod urna non pharetra. Phasellus blandit mattis ipsum, ac laore et lorem lacinia et. Cras et ligula libero.</p>
+        <a class="magicmore" href="#">Haretra in sodales atsen interdum</a>
+        </article>
+        </div>
+      	<hr><hr>
+        <div class="latest-f-blog">
+          <h4>LATEST FROM BLOG</h4>
+          <hr class="vertical-space1">
+         <article class="one-third mrgn-tp">
+          <img src="assets/img/latest-1.gif" class="btm">
+          <h2>Job Seeking Out Of Your Industry</h2>
+          <p>10 MAY 2013</p>
+         </article>
+         
+         <article class="one-third mrgn-tp">
+          <img src="assets/img/latest-2.gif" class="btm">
+          <h2>Magmifying Uses of Small Spaces</h2>
+          <p>10 MAY 2013</p>
+        </article>
+        
+          <article class="one-third last-column mrgn-tp">
+          <img src="assets/img/l.gif" class="btm">
+          <h2>What Your College Degree Will Be Worth</h2>
+          <p>10 MAY 2013</p>
+         </article>
+        </div><!-- latest-f-blog -->
+		
+        <div class="qot-week">
+         <span><img src="assets/img/qoute-line.jpg"></span>
+         <h6>QUOTE OF THE WEEK</h6>
+         <h4>Care accuracy in the design process show respect towards the costumer.</h4>
+         	<cite>
+              <i class="fa fa-minus"></i>
+              <span>John Smith</span>
+              <small>-Manager at Mexin</small>
+            </cite>
+        </div><!-- .qot-week -->
+     </section><!-- section.contianer -->
+     
+     <hr><hr><hr>
+     
+     <footer id="footer">
+       <div class="container clearfix">
+         <div class="one-third column foot-work">
+          <h4 class="subtitle">CONTACT INFORMATION</h4>
+           <div class="back-map">
+            <p><strong>Address:</strong>No.28 - 63739 street lorem ipsum City . Country</p>
+            <p><strong>Phone:</strong> <i class="fa fa-skype"></i> <span> +1 (234) 567 8901 </span> </p>
+            <p><strong>Fax:</strong> +1 (234) 567 8901 </p>
+            <p><strong>Email:</strong>Support@yoursite.com</p>
+           </div><!-- back-map -->
+      		<h4 class="subtitle">STAY CONNECTED</h4>
+		
+        <div class="social-follow2">
+        <a href="https://www.facebook.com" class="facebook" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+        <a href="https://www.dribbble.com" class="dribbble"><i class="fa fa-dribbble fa-lg"></i></a>
+        <a href="https://www.pinterest.com" class="pinterest"><i class="fa fa-pinterest fa-lg"></i></a>
+        <a href="https://www.vimeo.com" class="vimeo"><i class="fa fa-vimeo fa-lg"></i></a>
+        <a href="https://www.google.com" class="google"><i class="fa fa-google fa-lg"></i></a>
+        <a href="https://www.twitter.com" class="twitter"><i class="fa fa-twitter fa-lg"></i></a>
+        <a href="https://www.youtube.com" class="youtube-play"><i class="fa fa-youtube-play fa-lg"></i></a>
+       </div><!-- social-follow -->
+        
+       </div><!-- one-third.column -->
+       
+       <div class="one-third column">
+      <h4 class="subtitle">LATEST TWEET</h4>
+        <div class="back-tweet">
+        <i class="fa fa-twitter"></i>
+       </div><!-- back-tweet -->
+      <h2 class="webnus"><a href="#">@webnus</a></h2>
+     <h5 class="check-out">Check out this great #<span>themeforest</span> item 'Florida-Premium Multipurpose<br>Responsive Theme'<br>
+       <a href="#" class="web">http://t.co/lBJ0t9THgH</a></h5>
+       </div><!-- one-third -->
+       
+       <div class="one-third column">
+      <h4 class="subtitle">FLICKER PHOTOSTREAM</h4>
+          <div class="flicker-pics">
+        <a href="#"><img src="assets/img/flicker-1.jpg"></a>
+        <a href="#"><img src="assets/img/flicker-2.jpg"></a>
+        <a href="#"><img src="assets/img/flicker-3.jpg"></a>
+        <a href="#"><img src="assets/img/flicker-4.jpg"></a>
+        <a href="#"><img src="assets/img/flicker-5.jpg"></a>
+        <a href="#"><img src="assets/img/flicker-6.jpg"></a>
+        <a href="#"><img src="assets/img/flicker-7.jpg"></a>
+        <a href="#"><img src="assets/img/flicker-8.jpg"></a>
+        <a href="#"><img src="assets/img/flicker-9.jpg"></a>
+        <a href="#"><img src="assets/img/flicker-10.jpg"></a>
+        <a href="#"><img src="assets/img/flicker-11.jpg"></a>
+        <a href="#"><img src="assets/img/flicker-12.jpg"></a>
+          </div><!-- flicker-pics -->
+       </div><!-- one-third -->
+       </div><!-- container.clearfix -->
+       
+       <div class="footer-bot">
+         <div class="container">
+           <p>&copy;All Rights Rseerved. Powered By <strong>WordPress</strong></p>
+            <a href="index.html"><img src="assets/img/mexin-footer.jpg"></a>
+         </div><!-- .container -->
+       </div><!-- footer-bot -->
+       
+     </footer>
+     
+</body>
+</html>
